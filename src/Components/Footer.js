@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <p className="font-bold">Copyright &copy; {new Date().getFullYear()} - All right reserved by Abdullah Al Mamun</p>
+        <p className="font-bold">Copyright &copy; {new Date().getFullYear()} - All right reserved by Saykot</p>
       </div>
     </footer>
   );
