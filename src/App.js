@@ -1,11 +1,27 @@
-
+import { Route, Routes } from "react-router-dom";
+// import Footer from "./Components/Footer";
+import Header from "./Components/Header";
+import { PublicRoutes } from "./Routes/PublicRoutes";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div>
-      <h1>Hello</h1>
-      <button class="btn btn-primary">Button</button>
-      <button class="btn btn-outline w-64 rounded-full">Button</button>
+      <Header>
+        <Routes>
+          {
+            PublicRoutes.map(({path, Component}, index) =>(
+              <Route key={index} path={path} element={<Component />} />
+            ))}
+        </Routes>
+      </Header>
+      {/* <Footer /> */}
     </div>
   );
 }
