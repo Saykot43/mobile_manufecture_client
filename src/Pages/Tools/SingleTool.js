@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-const ToolCard = ({ tool, setItem }) => {
+const SingleTool = ({ tool, setItem }) => {
   return (
     <div className="card lg:max-w-lg bg-base-300 shadow-xl">
       <figure>
@@ -23,4 +23,4 @@ const ToolCard = ({ tool, setItem }) => {
   );
 };
 
-export default ToolCard;
+export default SingleTool;

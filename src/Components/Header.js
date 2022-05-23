@@ -23,9 +23,14 @@ const Header = ({ children }) => {
           Blogs
         </NavLink>
       </li>
+
       <li>
         {
-          user ? <button className="rounded-lg hover:bg-primary font-bold" onClick={logout} >Sign Out</button> : <NavLink to="/login" className="rounded-lg hover:bg-primary">Login
+          user ? <>
+            <NavLink to="/dashboard" className="rounded-lg hover:bg-primary">Dashboard
+            </NavLink>
+            <button className="rounded-lg hover:bg-primary font-bold" onClick={logout} >Sign Out</button>
+          </> : <NavLink to="/login" className="rounded-lg hover:bg-primary">Login
           </NavLink>
         }
       </li>
@@ -56,6 +61,27 @@ const Header = ({ children }) => {
       <div className="drawer-content flex flex-col">
         {/* <!-- Navbar --> */}
         <div className="w-full navbar bg-base-300 px-10 lg:px-20">
+
+          {/* Dashboard  */}
+          <div className="flex-none lg:hidden">
+            <label htmlFor="dashboard-droder" className="btn btn-square btn-ghost">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                className="inline-block w-6 h-6 stroke-current"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </label>
+          </div>
+
+
           <div className="flex-1 text-2xl font-bold">
             <NavLink to="/">Mobile-Manufacturers</NavLink>
           </div>
