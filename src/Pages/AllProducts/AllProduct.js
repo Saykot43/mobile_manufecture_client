@@ -5,10 +5,10 @@ const AllProduct = ({ product, refetch }) => {
     const { _id, name, image, shortDetails, minOrder, available, price } = product;
     refetch();
     return (
-        <div className='border-2 border-secondary rounded-lg shadow-lg py-8'>
+        <div className='border-2 rounded-2xl shadow-lg py-8'>
             <div className='text-center'>
-                <h2 className='font-bold my-3'>{name}</h2>
-                <img className='w-3/4 mx-auto rounded-lg' src={image} alt="" />
+                <h2 className='font-bold border-8 border-indigo-200 rounded-full text-3xl text-transparent bg-clip-text bg-gradient-to-br from-black via-green-400 to-indigo-400 my-3'>{name}</h2>
+                <img className='w-3/4 mx-auto rounded-xl' src={image} alt="" />
                 <p className='my-6'>{shortDetails}</p>
                 <h3 className='my-6 font-bold'>Price: ${price} (Per Unit)</h3>
                 <div className='flex items-center px-5'>

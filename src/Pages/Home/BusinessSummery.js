@@ -1,4 +1,5 @@
-import { faDisplay, faHeart, faLandmarkFlag, faUsersBetweenLines } from '@fortawesome/free-solid-svg-icons';
+import { faDisplay, faHeart, faUsersBetweenLines } from '@fortawesome/free-solid-svg-icons';
+import { BiWorld } from 'react-icons/bi';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
@@ -11,8 +12,8 @@ const BusinessSummery = () => {
             </div>
             <div className="stats stats-vertical lg:stats-horizontal shadow-lg w-full">
                 <div className="stat text-center">
-                    <div className="stat-figure text-secondary">
-                        <FontAwesomeIcon icon={faLandmarkFlag} size="3x" />
+                    <div className="stat-figure">
+                        <BiWorld className=' text-5xl text-slate-900' />
                     </div>
                     <div className="stat-value text-secondary">72</div>
                     <div className="text-xl">Countries</div>
@@ -21,7 +22,7 @@ const BusinessSummery = () => {
                     <div className="stat-figure text-primary">
                         <FontAwesomeIcon className='text-black' icon={faDisplay} size="3x" />
                     </div>
-                    <div className="stat-value text-black">535+</div>
+                    <div className="stat-value text-black">1000+</div>
                     <div className="text-xl">Complete Projects</div>
                 </div>
 
@@ -29,22 +30,19 @@ const BusinessSummery = () => {
                     <div className="stat-figure text-black">
                         <FontAwesomeIcon icon={faUsersBetweenLines} size="3x" />
                     </div>
-                    <div className="stat-value text-black">273+</div>
+                    <div className="stat-value text-black">500+</div>
                     <div className="text-xl">Happy Clients</div>
                 </div>
 
                 <div className="stat text-center">
                     <div className="stat-figure text-secondary">
-                        <FontAwesomeIcon icon={faHeart} size="3x" />
+                        <FontAwesomeIcon className=' text-red-700' icon={faHeart} size="3x" />
                     </div>
                     <div className="stat-value text-secondary">432+</div>
                     <div className="text-xl">Feedbacks</div>
                 </div>
             </div>
-            <div className='text-center py-8 shadow-lg rounded-lg max-w-lg mx-auto my-8'>
-                <h2 className='text-xl font-bold uppercase'>If Any Query, Please Get in Touch with Us.</h2>
-                <button className='btn btn-neutral my-4 font-bold'>Contact Us</button>
-            </div>
+
         </div>
     );
 };
