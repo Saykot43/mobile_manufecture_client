@@ -24,7 +24,7 @@ const Navbar = () => {
         <li><NavLink className='lg:font-bold uppercase mx-2' to="/myPortfolio">My Portfolio</NavLink></li>
         <li><NavLink className='lg:font-bold uppercase mx-2' to="/blogs">Blogs</NavLink></li>
         <li>{user ? <NavLink className='lg:font-bold uppercase my-2 lg:my-0 lg:mx-2' to="/dashboard">Dashboard</NavLink> : ''}</li>
-        <li>{user ? <button onClick={logout} className="lg:font-bold uppercase mx-2">SignOut</button> : <NavLink className='font-bold uppercase mx-2' to="/login">Login</NavLink>}</li>
+        <li>{user ? <button onClick={logout} className="lg:font-bold uppercase mx-2"><span className=' text-sm text-red-500'>{user.displayName}</span> SignOut</button> : <NavLink className='font-bold uppercase mx-2' to="/login">Login</NavLink>}</li>
     </>;
 
     return (
