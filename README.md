@@ -1,19 +1,48 @@
-# Site Review
+> # ["Mobile Manufecture" Live Website Link :](https://mobile-ab113.web.app/)
 
-## Website Feature:::
-1. Anyone can order Mobile parts online.
-2. They can see the available products quantity.
-3. They have to order minimum quantity of products.
-4. People can show their ordered products through dashboard.
-5. Admin can manage the whole website.
-6. They can login with email-password or google.
+### [https://mobile-ab113.web.app/](https://mobile-ab113.web.app/)
 
-# Website Functionality:::
-1. react router dom
-2. tailwind css
-3. DaisyUI
-4. react icons
-5. react fontAwsome
-6. react leaflet
-7. react form hook
-8. react firebase hooks
+> # ["Mobile manufecture Client" Private Repo Link :](https://github.com/programming-hero-web-course1/manufacturer-website-client-side-Saykot43)
+
+### [https://github.com/programming-hero-web-course1/manufacturer-website-client-side-Saykot43](https://github.com/programming-hero-web-course1/manufacturer-website-client-side-Saykot43)
+
+---
+
+> # ["Mobile manufecture Server" Private Repo Link :](https://github.com/programming-hero-web-course1/manufacturer-website-server-side-Saykot43)
+
+### [https://github.com/programming-hero-web-course1/manufacturer-website-server-side-Saykot43](https://github.com/programming-hero-web-course1/manufacturer-website-server-side-Saykot43)
+
+---
+
+> ## Technologies that used in This Project
+
+## _Front End Tech._ :
+
+| Tech. Name                |     | Version |
+| ------------------------- | :-: | ------: |
+| react                     |     |  18.1.0 |
+| tailwindcss               |     |  3.0.24 |
+| axios                     |     |  0.27.2 |
+| daisyui                   |     |  2.15.0 |
+| firebase                  |     |   9.8.1 |
+| react-firebase-hooks      |     |   5.0.3 |
+| react-hook-form           |     |  7.31.2 |
+| react-query               |     |  3.39.0 |
+| react-responsive-carousel |     |  3.2.23 |
+| react-router-dom          |     |   6.3.0 |
+| react-toastify            |     |   9.0.1 |
+| sweetalert2               |     | 11.4.16 |
+| theme-change              |     |   2.0.2 |
+| react-stripe-js           |     |   1.8.0 |
+| aos                       |     |   2.3.4 |
+
+## _Backend End Tech._ :
+
+| Tech. Name   |     | Version |
+| ------------ | :-: | ------: |
+| express      |     |  4.18.1 |
+| mongodb      |     |   4.6.0 |
+| stripe       |     |   9.4.0 |
+| jsonwebtoken |     |   8.5.1 |
+| dotenv       |     |  16.0.1 |
+| cors         |     |   2.8.5 |
