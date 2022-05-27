@@ -28,7 +28,7 @@ const AddProduct = () => {
                         available: data.available,
                         price: data.price
                     }
-                    fetch('http://localhost:5000/products', {
+                    fetch('https://young-anchorage-42001.herokuapp.com/products', {
                         method: "POST",
                         headers: {
                             'content-type': 'application/json',
