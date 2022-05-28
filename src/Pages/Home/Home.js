@@ -6,6 +6,7 @@ import Newsletter from './Newsletter';
 import Products from './Products';
 import Review from './Review';
 import UsbMember from './UsbMember';
+import Footer from '../Shared/Footer'
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
             <UsbMember />
             <Map />
             <Newsletter />
+            <Footer />
         </div>
     );
 };

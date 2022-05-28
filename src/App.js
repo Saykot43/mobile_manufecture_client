@@ -20,7 +20,6 @@ import Payment from "./Pages/Dashboard/Payment";
 import useAdmin from "./Hooks/useAdmin";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "./firebase.init";
-import Footer from "./Pages/Shared/Footer";
 import AllProducts from "./Pages/AllProducts/AllProducts";
 import MyPortfolio from "./Pages/MyPortfolio/MyPortfolio";
 import Blogs from "./Pages/Blogs/Blogs";
@@ -38,53 +37,53 @@ function App() {
   const [admin] = useAdmin(user);
   return (
     <div>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/products/:id" element={
-          <ProtectedRoute>
-            <Purchase />
-          </ProtectedRoute>}>
-        </Route>
+      <Navbar>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/products/:id" element={
+            <ProtectedRoute>
+              <Purchase />
+            </ProtectedRoute>}>
+          </Route>
 
-        <Route path="/dashboard" element={
-          <ProtectedRoute>
-            <Dashboard />
-          </ProtectedRoute>}>
-          {!admin ? <Route index element={<MyOrders></MyOrders>}></Route> : <Route index element={<MyProfile></MyProfile>}></Route>}
-          <Route path="payment/:id" element={<Payment></Payment>}></Route>
-          <Route path="addReview" element={<AddReview></AddReview>}></Route>
-          <Route path="myProfile" element={<MyProfile></MyProfile>}></Route>
-          <Route path="makeAdmin" element={
-            <RequireAdmin>
-              <MakeAdmin></MakeAdmin>
-            </RequireAdmin>}>
+          <Route path="/dashboard" element={
+            <ProtectedRoute>
+              <Dashboard />
+            </ProtectedRoute>}>
+            {!admin ? <Route index element={<MyOrders></MyOrders>}></Route> : <Route index element={<MyProfile></MyProfile>}></Route>}
+            <Route path="payment/:id" element={<Payment></Payment>}></Route>
+            <Route path="addReview" element={<AddReview></AddReview>}></Route>
+            <Route path="myProfile" element={<MyProfile></MyProfile>}></Route>
+            <Route path="makeAdmin" element={
+              <RequireAdmin>
+                <MakeAdmin></MakeAdmin>
+              </RequireAdmin>}>
+            </Route>
+            <Route path="manageAllOrders" element={
+              <RequireAdmin>
+                <ManageAllOrders></ManageAllOrders>
+              </RequireAdmin>}>
+            </Route>
+            <Route path="addProduct" element={
+              <RequireAdmin>
+                <AddProduct></AddProduct>
+              </RequireAdmin>}>
+            </Route>
+            <Route path="manageProducts" element={
+              <RequireAdmin>
+                <ManageProducts></ManageProducts>
+              </RequireAdmin>}>
+            </Route>
           </Route>
-          <Route path="manageAllOrders" element={
-            <RequireAdmin>
-              <ManageAllOrders></ManageAllOrders>
-            </RequireAdmin>}>
-          </Route>
-          <Route path="addProduct" element={
-            <RequireAdmin>
-              <AddProduct></AddProduct>
-            </RequireAdmin>}>
-          </Route>
-          <Route path="manageProducts" element={
-            <RequireAdmin>
-              <ManageProducts></ManageProducts>
-            </RequireAdmin>}>
-          </Route>
-        </Route>
 
-        <Route path="allProducts" element={<AllProducts />}></Route>
-        <Route path="myPortfolio" element={<MyPortfolio />}></Route>
-        <Route path="blogs" element={<Blogs />}></Route>
-        <Route path="/login" element={<Login />}></Route>
-        <Route path="/signup" element={<SignUp />}></Route>
-        <Route path="*" element={<NotFound/>}></Route>
-      </Routes>
-      <Footer />
+          <Route path="allProducts" element={<AllProducts />}></Route>
+          <Route path="myPortfolio" element={<MyPortfolio />}></Route>
+          <Route path="blogs" element={<Blogs />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/signup" element={<SignUp />}></Route>
+          <Route path="*" element={<NotFound />}></Route>
+        </Routes>
+      </Navbar>
       <ToastContainer />
     </div>
   );
