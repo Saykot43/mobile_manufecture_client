@@ -3,13 +3,13 @@
 
 ## [https://mobile-ab113.web.app/](https://mobile-ab113.web.app/)
 
-> # Mobile manufecture Client" Private Repo
-  ### Github Link:[ Click ](https://github.com/programming-hero-web-course1/manufacturer-website-client-side-Saykot43)
+> # Mobile manufecture Client" Public Repo
+  ### Github Link:[ Click ](https://github.com/Saykot43/mobile_manufecture_client.git)
 
 ---
 
-> ## Mobile manufecture Server" Private Repo 
-### Github Link:[ Click :](https://github.com/programming-hero-web-course1/manufacturer-website-server-side-Saykot43)
+> ## Mobile manufecture Server" Public Repo 
+### Github Link:[ Click :](https://github.com/Saykot43/mabole_manufecture_tools_server.git)
 
 
 ---
